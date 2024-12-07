@@ -25,12 +25,25 @@ To develop a mobile based application to ease the dyscalculic student’s math p
 (3) Addressing the challenges faced by students with procedural dyscalculia.
 (4) Assessing how well the student know basic mathematics and to provide a personalized course content.
 
-## Component 01
+## Component 01 - Adaptive question generating aptitude test to identify  the student’s basic math skills and personalizing the activities
 
 ### Research Problem
+* Develop an adaptive system that assesses, and track the basic math skills of students aged 9 to 10 with dyscalculia by identifying their strengths and weaknesses and providing a personalized course.
+
 ### Main Objective
+* To accurately assess the dyscalculic student’s mathematical skills through an adaptive aptitude test, and to setup a personalized course for each student.
+
 ### Sub Objectives
+1. To create an adaptive aptitude test to identify the basic knowledge
+2. Analyse student’s performance during the test
+3. Collect the parent’s insights about the child’s learning behaviour and difficulties 
+4. Generate report on student weaknesses and strengths and level
+5. Prepare the personalized activities for each student
+
 ### Machine Learning
+1. Question Generation Model - Generates dynamic math questions based on a student's skill level, dyscalculia type, and lesson category.
+2. Performance Analysis Model - Analyzes student's answering techniques and performance
+3. Personalized Course Generation Model - Generates personalized learning paths based on aptitude test results and parent insights
 
 ## Component 02 - Addresses the Challenges faced by students with Semantic Dyscalculia using Augmented Reality
 
