@@ -10,7 +10,7 @@ Dyscalculia has three subtypes:
 
 This system is to be made for Sri Lankan students from age 9 to 10 who are healthy without any disability or abnormality but dysfunction of the neural connections that process numeric language using English Language. The main purpose is to make the student’s math phobia and make the mindset that learning math is interesting and fun for the students who are having dyscalculia. To assist the kids in improving, a novel strategy is being used through adaptive question generation, voice recognition & pronunciation detection, problem-solving simulation, and real-time emotion & facial expressions detection.
 
-Initially, for the dyscalculia students a math skill assessment (aptitude exam) is carried out.This is to provide a baseline for tracking the student’s current level in math and to identify the strengths and the weaknesses.The system helps the students with math by focusing on how students listen to and speak math words and instructions.This provides interactive lessons, building confidence in students to express their thoughts accurately.Then the system helps students with procedural dyscalculia by focusing on how they understand and carry out mathematical procedures ensuring that the students adhere to proper mathematical methods.Moreover, the system focuses on helping students with semantic dyscalculia to understand numerical concepts and the relationships between numbers.
+Initially, for the dyscalculia students a math skill assessment (aptitude exam) is carried out. This is to provide a baseline for tracking the student’s current level in math and to identify the strengths and the weaknesses.The system helps the students with math by focusing on how students listen to and speak math words and instructions.This provides interactive lessons, building confidence in students to express their thoughts accurately.Then the system helps students with procedural dyscalculia by focusing on how they understand and carry out mathematical procedures ensuring that the students adhere to proper mathematical methods.Moreover, the system focuses on helping students with semantic dyscalculia to understand numerical concepts and the relationships between numbers.
 
 
 ## Research Question 
@@ -69,7 +69,7 @@ To develop a mobile based application to ease the dyscalculic student’s math p
 
 ### Sub Objectives
 * Teach lessons and practice math through gesture technologies with students.
-* Monitor progress through gesture movement, and response accuracy.
+* Monitor progress through gesture movement and response accuracy.
 * Assess improvements in understanding and engagement through activity accuracy.
 * Identify focus areas for targeted assessments and future improvements.
 
