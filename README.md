@@ -119,7 +119,7 @@ To develop a mobile based application to ease the dyscalculic student’s math p
             <th>Member Status</th>
             <th>Registration Number</th>
             <th>Name With Initials</th>
-            <th>Function</th>
+            <th>Component</th>
         </tr>
     </thead>
     <tbody>
@@ -127,25 +127,25 @@ To develop a mobile based application to ease the dyscalculic student’s math p
             <td><b>Group Leader</b></td>
             <td>IT21377358</td>
             <td>Hanshani S.G.H.S.</td>
-            <td>Function 01</td>            
+            <td>Component 01</td>            
         </tr>
         <tr>
             <td>Member 01</td>
             <td>IT21355196</td>
             <td>Kalpajith K. L. S.</td>
-            <td>Function 02</td>
+            <td>Component 02</td>
         </tr>
           <tr>
             <td>Member 02</td>
             <td>IT21377280</td>
             <td>Rajapaksha C. S.</td>
-            <td>Function 03</td>
+            <td>Component 03</td>
         </tr>
         <tr>
             <td>Member 03</td>
             <td>IT21378270</td>
             <td>Wimaladharma T. H. Y. B.</td>
-            <td>Function 04</td>
+            <td>Component 04</td>
         </tr>
     </tbody>
 </table>
