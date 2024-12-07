@@ -24,10 +24,10 @@ To develop a mobile based application to ease the dyscalculic student’s math p
 
 ## Sub Objectives
 
-(1) Assessing how well the student know basic mathematics and to provide a personalized course content.
-(2) Addressing the challenges faced by students with semantic dyscalculia.
-(3) Addressing the challenges faced by students with procedural dyscalculia.
-(4) Assessing how well the student know basic mathematics and to provide a personalized course content.
+1. Assessing how well the student know basic mathematics and to provide a personalized course content.
+2. Addressing the challenges faced by students with semantic dyscalculia.
+3. Addressing the challenges faced by students with procedural dyscalculia.
+4. Assessing how well the student know basic mathematics and to provide a personalized course content.
 
 ## Component 01 - Adaptive question generating aptitude test to identify the student’s basic math skills and personalizing the activities
 
