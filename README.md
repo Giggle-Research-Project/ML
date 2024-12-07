@@ -32,12 +32,25 @@ To develop a mobile based application to ease the dyscalculic student’s math p
 ### Sub Objectives
 ### Machine Learning
 
-## Component 02
+## Component 02 - Addresses the Challenges faced by students with Semantic Dyscalculia using Augmented Reality
 
 ### Research Problem
+* To create a system that helps students with semantic dyscalculia by teaching math by AR technologies, to improve conceptual understanding using real world examples.
+
 ### Main Objective
+* Improve the mathematical proficiency and practical thinking skills of students with semantic dyscalculia through targeted activities.
+
 ### Sub Objectives
+* Create interactive math activities with real-world examples
+* Enhance visual-spatial skills and number sense using visual aids and AR.
+* Real-time assess the students’s progress 
+* Personalise activities according to the performance.
+
 ### Machine Learning
+1. Facial Emotion Detection Model - Detects and classifies facial expressions in real-time
+2. Voice Expression Detection Model - Analyzes voice to detect emotional states
+3. Concentration Identification Model - Tracks eye movements to determine concentration levels
+4. Adaptive Learning Activity Generator - Generates tailored activities based on emotional and behavioral inputs
 
 ## Component 03
 
