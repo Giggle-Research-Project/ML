@@ -59,9 +59,22 @@ To develop a mobile based application to ease the dyscalculic student’s math p
 ### Sub Objectives
 ### Machine Learning
 
-## Component 04
+## Component 04 - Addresses the challenges faced by students with Procedural Dyscalculia using Gesture Technologies
 
 ### Research Problem
+* To create a system that helps students with procedural dyscalculia by teaching math, to improve step-by-step understanding through gesture technologies.
+
 ### Main Objective
+* Enhance mathematical proficiency through personalized learning experiences using gesture technologies to improve step-by-step understanding.
+
 ### Sub Objectives
+* Teach lessons and practice math through gesture technologies with students.
+* Monitor progress through gesture movement, and response accuracy.
+* Assess improvements in understanding and engagement through activity accuracy.
+* Identify focus areas for targeted assessments and future improvements.
+
 ### Machine Learning
+1. Gesture Analysis Model - Analyzes student's gesture movements during problem-solving.
+2. Handwriting Analysis Model - Analyzes student's handwriting for accuracy and adherence to guidelines.
+3. Confidence Analysis Model - Assesses student's confidence based on gesture and handwriting data.
+4. Adaptive Learning Session Generator - Creates personalized learning sessions based on gesture and handwriting analysis.
