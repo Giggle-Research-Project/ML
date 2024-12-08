@@ -77,15 +77,29 @@ To develop a mobile based application to ease the dyscalculic student’s math p
 3. Concentration Identification Model - Tracks eye movements to determine concentration levels
 4. Adaptive Learning Activity Generator - Generates tailored activities based on emotional and behavioral inputs
 
-## Component 03
+## Component 03 - Addresses the Challenges Faced by Students with Verbal Dyscalculia Using Interactive and Adaptive Learning Sessions
 
 ### Research Problem
 
+- To create a system that assists students with verbal dyscalculia in understanding and using mathematical language through interactive verbal teaching, guided participation, and independent practice.
+
 ### Main Objective
+
+- Improve the comprehension and articulation of mathematical concepts in students with verbal dyscalculia through interactive and adaptive verbal learning sessions.
 
 ### Sub Objectives
 
+- Develop interactive teaching sessions to introduce and explain mathematical concepts.
+- Design guided student participation activities with real-time verbal feedback.
+- Create solo practice sessions for independent learning using verbal and auditory cues.
+- Monitor and analyze verbal responses to assess student progress and engagement.
+
 ### Machine Learning
+
+1. Speech Recognition Model - Processes students' verbal inputs and identifies patterns of comprehension.
+2. Pronunciation Analysis Model - Evaluates and provides feedback on the clarity and accuracy of spoken mathematical terms.
+3. Adaptive Verbal Session Generator - Tailors teaching, interactive, and practice sessions based on student performance and verbal engagement.
+4. Engagement Detection Model - Analyzes verbal participation frequency and adjusts session flow to maintain interest and involvement.
 
 ## Component 04 - Addresses the challenges faced by students with Procedural Dyscalculia using Gesture Technologies
 
