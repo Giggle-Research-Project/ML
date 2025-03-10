@@ -1,5 +1,5 @@
-from questions import procedural, semantic, verbal
-from resources.constants import DyscalculiaType, Difficulty, Lesson
+from function_01.question_generation.questions import procedural, semantic, verbal
+from function_01.question_generation.resources.constants import DyscalculiaType, Difficulty, Lesson
 
 
 question_map = {
