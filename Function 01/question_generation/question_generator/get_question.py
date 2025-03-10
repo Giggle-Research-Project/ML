@@ -1,5 +1,5 @@
-from resources.constants import DyscalculiaType, Difficulty, Lesson
-from question_generator.question_map import question_map
+from function_01.question_generation.resources.constants import DyscalculiaType, Difficulty, Lesson
+from function_01.question_generation.question_generator.question_map import question_map
 
 import random
 

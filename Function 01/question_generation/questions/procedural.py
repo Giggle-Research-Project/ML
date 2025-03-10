@@ -1,5 +1,5 @@
 import random
-from resources.constants import Difficulty, sum_greater_or_equal_ten, sum_less_than_ten
+from function_01.question_generation.resources.constants import Difficulty, sum_greater_or_equal_ten, sum_less_than_ten
 
 # 1. _________ Addition question _________
 

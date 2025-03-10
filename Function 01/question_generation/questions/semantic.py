@@ -1,6 +1,6 @@
 import random
 from fractions import Fraction
-from resources.constants import (
+from function_01.question_generation.resources.constants import (
     Lesson, 
     items_list,
     addition_structures,
