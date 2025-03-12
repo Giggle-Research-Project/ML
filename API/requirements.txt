@@ -1,0 +1,9 @@
+tensorflow==2.18.0
+opencv-python==4.11.0.86
+fastapi[standard]
+scikit-learn==1.6.1
+librosa==0.10.2
+pandas==2.2.3
+openai-whisper==20240930
+mediapipe==0.10.20
+xgboost==2.1.4
