@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ML Prediction Dashboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+      .dashboard {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+      .prediction-section {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+      }
+      .status {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .connection-status {
+        color: gray;
+        font-style: italic;
+      }
+      .concentration-status {
+        display: flex;
+        align-items: center;
+      }
+      .concentration-indicator {
+        width: 100%;
+        height: 20px;
+        background-color: #e0e0e0;
+        border-radius: 10px;
+        margin-top: 10px;
+        overflow: hidden;
+      }
+      .concentration-bar {
+        height: 100%;
+        transition: width 0.5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <h1>ML Prediction Dashboard</h1>
+
+      <div class="prediction-section">
+        <h2>Concentration Prediction</h2>
+        <div class="connection-status" id="concentrationConnectionStatus">
+          Connecting to WebSocket...
+        </div>
+        <div class="concentration-status">
+          <div id="concentrationStatus">Status: Waiting for data</div>
+        </div>
+        <div class="concentration-indicator">
+          <div
+            id="concentrationBar"
+            class="concentration-bar"
+            style="width: 0%; background-color: orange"
+          ></div>
+        </div>
+      </div>
+
+      <div class="prediction-section">
+        <h2>Emotion Prediction</h2>
+        <div class="connection-status" id="emotionConnectionStatus">
+          Connecting to WebSocket...
+        </div>
+        <div id="emotionStatus" class="status">Emotion: Waiting for data</div>
+      </div>
+    </div>
+
+    <script>
+      // Configuration (replace with your actual ML server IP)
+      const ML_SERVER_IP = "192.168.76.253";
+      const CONCENTRATION_WS_URL = `ws://${ML_SERVER_IP}:8000/ws/concentration-status`;
+      const EMOTION_WS_URL = `ws://${ML_SERVER_IP}:8000/ws/detect-emotion`;
+
+      // Concentration WebSocket
+      function setupConcentrationWebSocket() {
+        const concentrationStatus = document.getElementById(
+          "concentrationStatus"
+        );
+        const concentrationBar = document.getElementById("concentrationBar");
+        const concentrationConnectionStatus = document.getElementById(
+          "concentrationConnectionStatus"
+        );
+
+        const ws = new WebSocket(CONCENTRATION_WS_URL);
+
+        ws.onopen = () => {
+          concentrationConnectionStatus.textContent =
+            "Connected to Concentration WebSocket";
+          concentrationConnectionStatus.style.color = "green";
+        };
+
+        ws.onmessage = (event) => {
+          try {
+            const data = JSON.parse(event.data);
+
+            // Update concentration status
+            concentrationStatus.textContent = `Status: ${data.status}`;
+
+            // Update concentration bar (simulated for demonstration)
+            const score = data.status === "Concentrated" ? 0.8 : 0.3;
+            concentrationBar.style.width = `${score * 100}%`;
+            concentrationBar.style.backgroundColor =
+              score >= 0.7 ? "green" : score >= 0.4 ? "orange" : "red";
+          } catch (error) {
+            console.error("Error parsing concentration data:", error);
+          }
+        };
+
+        ws.onerror = (error) => {
+          concentrationConnectionStatus.textContent = "WebSocket Error";
+          concentrationConnectionStatus.style.color = "red";
+          console.error("Concentration WebSocket Error:", error);
+        };
+
+        ws.onclose = () => {
+          concentrationConnectionStatus.textContent = "WebSocket Disconnected";
+          concentrationConnectionStatus.style.color = "red";
+
+          // Attempt to reconnect after 5 seconds
+          setTimeout(setupConcentrationWebSocket, 5000);
+        };
+      }
+
+      // Emotion WebSocket
+      function setupEmotionWebSocket() {
+        const emotionStatus = document.getElementById("emotionStatus");
+        const emotionConnectionStatus = document.getElementById(
+          "emotionConnectionStatus"
+        );
+
+        const ws = new WebSocket(EMOTION_WS_URL);
+
+        ws.onopen = () => {
+          emotionConnectionStatus.textContent =
+            "Connected to Emotion WebSocket";
+          emotionConnectionStatus.style.color = "green";
+        };
+
+        ws.onmessage = (event) => {
+          try {
+            const data = JSON.parse(event.data);
+
+            // Update emotion status
+            emotionStatus.textContent = `Emotion: ${data.emotion}`;
+          } catch (error) {
+            console.error("Error parsing emotion data:", error);
+          }
+        };
+
+        ws.onerror = (error) => {
+          emotionConnectionStatus.textContent = "WebSocket Error";
+          emotionConnectionStatus.style.color = "red";
+          console.error("Emotion WebSocket Error:", error);
+        };
+
+        ws.onclose = () => {
+          emotionConnectionStatus.textContent = "WebSocket Disconnected";
+          emotionConnectionStatus.style.color = "red";
+
+          // Attempt to reconnect after 5 seconds
+          setTimeout(setupEmotionWebSocket, 5000);
+        };
+      }
+
+      // Initialize WebSocket connections
+      setupConcentrationWebSocket();
+      setupEmotionWebSocket();
+    </script>
+  </body>
+</html>
