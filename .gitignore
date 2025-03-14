@@ -1,0 +1,11 @@
+yolov5/
+.ipynb_checkpoints/
+__pycache__
+API/models/*.h5
+API/models/*.pkl
+test_data
+temp_audio.wav
+
+API/env
+.venv
+uploads
